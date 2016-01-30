@@ -5,7 +5,7 @@ from  polls import views
 
 urlpatterns = [
     # Examples:
-    url(r'^$', include(views.index)),
+    url(r'^$', views.index),
     url(r'^polls/', include('polls.urls', namespace="polls")),
     # url(r'^blog/', include('blog.urls')),
 
